@@ -1,0 +1,130 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my home",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "getTemperature",
+                    "slots": [
+                        {
+                            "name": "room",
+                            "type": "rooms"
+                        }
+                    ],
+                    "samples": [
+                        "current temperature in {room}",
+                        "temperature {room}",
+                        "get temperature in {room}",
+                        "what is the current temperature in {room}",
+                        "temperature",
+                        "get temperature",
+                        "what is the current temperature",
+                        "current temperature"
+                    ]
+                },
+                {
+                    "name": "lights",
+                    "slots": [
+                        {
+                            "name": "status",
+                            "type": "statuses"
+                        },
+                        {
+                            "name": "room",
+                            "type": "rooms"
+                        }
+                    ],
+                    "samples": [
+                        "turn {status} lights in {room}",
+                        "turn {status} lights"
+                    ]
+                },
+                {
+                    "name": "setTemperature",
+                    "slots": [
+                        {
+                            "name": "value",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "room",
+                            "type": "rooms"
+                        }
+                    ],
+                    "samples": [
+                        "set temperature to {value} in {room}",
+                        "set temperature to {value}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "statuses",
+                    "values": [
+                        {
+                            "id": "0",
+                            "name": {
+                                "value": "off"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "name": {
+                                "value": "on"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "rooms",
+                    "values": [
+                        {
+                            "id": "0",
+                            "name": {
+                                "value": "living room"
+                            }
+                        },
+                        {
+                            "id": "1",
+                            "name": {
+                                "value": "kitchen"
+                            }
+                        },
+                        {
+                            "id": "2",
+                            "name": {
+                                "value": "bathroom"
+                            }
+                        },
+                        {
+                            "id": "3",
+                            "name": {
+                                "value": "bedroom"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
